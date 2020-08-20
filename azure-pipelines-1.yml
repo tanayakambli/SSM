@@ -20,8 +20,9 @@ steps:
     templateFile: 'AWS--SSM--Parameter.yaml'
     templateParametersSource: inline
     templateParameters: |
-     - ParameterKey: inputNumber
-       ParameterValue: '1'
      - ParameterKey: inputstring
        ParameterValue: hello
+     - ParameterKey: inputNumber
+       ParameterValue: '1'
+    
 
