@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  CoolNumber:
+    Type: Number
+
+Resources:
+  CoolResource:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: CoolNumber
+      Type: String
+      Value: !Ref CoolNumber
