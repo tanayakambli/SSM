@@ -16,11 +16,11 @@ steps:
   inputs:
     awsCredentials: 'cfn'
     regionName: 'us-east-2'
-    stackName: 'coolstack'
+    stackName: 'azurestack'
     templateFile: 'AWS--SSM--Parameter.yaml'
     templateParametersSource: inline
     templateParameters: |
-     - ParameterKey: CoolNumber
+     - ParameterKey: inputNumber
        ParameterValue: 1
     
 
