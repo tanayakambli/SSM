@@ -10,4 +10,4 @@ Resources:
     Properties:
       Name: inputNumber
       Type: String
-      Value: !Ref CoolNumber
+      Value: !Ref inputNumber
