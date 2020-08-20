@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+
+steps:
+- task: AmazonWebServices.aws-vsts-tools.CloudFormationCreateOrUpdateStack.CloudFormationCreateOrUpdateStack@1
+  displayName: 'Deploy Lease Update Eventing Application'
+  inputs:
+    stackName: 'coolstack'
+    templateFile: 'AWS--SSM--Parameter.yaml''
+    templateParametersSource: inline
+    templateParameters: |
+     - ParameterKey: CoolNumber
+       ParameterValue: 1
+
