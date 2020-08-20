@@ -15,7 +15,7 @@ steps:
   displayName: 'Deploy Lease Update Eventing Application'
   inputs:
     stackName: 'coolstack'
-    templateFile: 'AWS--SSM--Parameter.yaml''
+    templateFile: 'AWS--SSM--Parameter.yaml'
     templateParametersSource: inline
     templateParameters: |
      - ParameterKey: CoolNumber
