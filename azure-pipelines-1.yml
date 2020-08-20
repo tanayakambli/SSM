@@ -19,5 +19,5 @@ steps:
     templateParametersSource: inline
     templateParameters: |
      - ParameterKey: CoolNumber
-       ParameterValue: 1
+       ParameterValue: '1'
 
