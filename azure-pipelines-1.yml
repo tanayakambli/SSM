@@ -22,5 +22,6 @@ steps:
     templateParameters: |
      - ParameterKey: inputNumber
        ParameterValue: '1'
-    
+     - ParameterKey: inputstring
+       ParameterValue: hello
 
