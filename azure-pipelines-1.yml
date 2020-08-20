@@ -20,4 +20,6 @@ steps:
     templateParameters: |
      - ParameterKey: CoolNumber
        ParameterValue: '1'
+     - ParameterKey: Region
+       ParameterValue: 'us-east-2'
 
