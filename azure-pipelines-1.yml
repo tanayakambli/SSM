@@ -21,6 +21,6 @@ steps:
     templateParametersSource: inline
     templateParameters: |
      - ParameterKey: inputNumber
-       ParameterValue: 1
+       ParameterValue: '1'
     
 
