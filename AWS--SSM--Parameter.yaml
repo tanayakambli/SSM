@@ -3,6 +3,9 @@ AWSTemplateFormatVersion: "2010-09-09"
 Parameters:
   inputNumber:
     Type: Number
+  
+  inputstring:
+    Type: String
 
 Resources:
   CoolResource:
