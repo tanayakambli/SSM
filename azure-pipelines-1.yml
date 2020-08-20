@@ -14,12 +14,13 @@ steps:
 - task: AmazonWebServices.aws-vsts-tools.CloudFormationCreateOrUpdateStack.CloudFormationCreateOrUpdateStack@1
   displayName: 'Deploy Lease Update Eventing Application'
   inputs:
+    awsCredentials: 'cfn'
+    regionName: 'us-east-2'
     stackName: 'coolstack'
     templateFile: 'AWS--SSM--Parameter.yaml'
     templateParametersSource: inline
     templateParameters: |
      - ParameterKey: CoolNumber
        ParameterValue: '1'
-     - ParameterKey: Region
-       ParameterValue: 'us-east-2'
+    
 
